@@ -1,5 +1,5 @@
 <nav class="nav nav-expand-lg navbar-dark bg-dark">
-    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; LOGO</span>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; SING</span>
 <form class="form-inline my-2 my-lg-0 ml-auto" type="get" action="{{route('search')}}">
         <input class="form-control mr-sm-2" name= "result"type="search" placeholder="Search" aria-label="Search">
         <button class="btn-search btn-outline-success my-2 my-sm-0 btn-dark" type="submit">Search</button>

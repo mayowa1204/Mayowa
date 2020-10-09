@@ -21,7 +21,7 @@ class SongController extends Controller
 
     public function index()
     {
-        $songs = Song::paginate(3);
+        $songs = Song::paginate(12);
 
         return view('explore', compact('songs'));
     }
@@ -46,6 +46,7 @@ class SongController extends Controller
         }
         // $songs = [$songs[0]];
         // return $songs;
+        return redirect('explore');
         return view('liked', compact('songs'));
     }
     public function dislike($id)
@@ -68,6 +69,7 @@ class SongController extends Controller
             //  if(empty($dislikes->user_id)){ //  
         }
         // return $Songs;
+        return redirect('explore');
         return view('disliked', compact('songs'));
     }
 
